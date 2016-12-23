@@ -1,6 +1,6 @@
 ##### Scenesdesmus cell concentrations
 
-* [cell concentration and size data](https://github.com/JoeyBernhardt/scenedesmus/tree/master/data-processed)
+* [cell concentration and size data](https://github.com/JoeyBernhardt/scenedesmus/blob/master/data-processed/scenedesmus_dec22.csv)
 	+ metadata: cell_density is the number of cells per ml, cell_volume is avaerge volume (using the ABD method -- forgot what that stands for, Area by Distance?), start_time contains the time and date the sample was taken
 	
 	+ you can download the data by clicking the link, clicking the 'Raw' button and then right clicking, Save as...
