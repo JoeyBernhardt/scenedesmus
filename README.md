@@ -1,4 +1,4 @@
-##### Scenesdesmus cell concentrations
+##### Scenesdesmus cell concentrations for Michelle :tada:
 
 * [cell concentration and size data](https://github.com/JoeyBernhardt/scenedesmus/blob/master/data-processed/scenedesmus_dec22.csv)
 	+ metadata: cell_density is the number of cells per ml, cell_volume is average volume (using the ABD method -- forgot what that stands for, Area by Distance?), start_time contains the time and date the sample was taken
