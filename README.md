@@ -1,4 +1,4 @@
-##### Scenesdesmus cell concentrations for Michelle :tada:
+##### Scenesdesmus cell concentrations for Michelle :tada::frog:
 
 * [cell concentration and size data](https://github.com/JoeyBernhardt/scenedesmus/blob/master/data-processed/scenedesmus_dec22.csv)
 	+ metadata: cell_density is the number of cells per ml, cell_volume is average volume (using the ABD method -- forgot what that stands for, Area by Distance?), start_time contains the time and date the sample was taken
@@ -9,3 +9,5 @@
 	+ these files contain all the summary info on cell size, shape, size bins etc.
 
 * [R script for extracting the cell concentrations](https://github.com/JoeyBernhardt/scenedesmus/blob/master/R/00_data_import.R) 
+
+	+ if you want to extract other types of data from the raw data files, you can modify this script...I'm happy to help with this too!
