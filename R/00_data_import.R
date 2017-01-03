@@ -10,7 +10,9 @@ library(lubridate)
 library(stringr)
 
 # Step 1: get a list of all the files
-cell_files <- list.files("/Users/Joey/Documents/M.Tseng/flowcam-summaries-dec22", full.names = TRUE)
+cell_files <- c(list.files("/Users/Joey/Documents/M.Tseng/flowcam-summaries-dec22", full.names = TRUE),
+								list.files("/Users/Joey/Documents/M.Tseng/flowcam-summaries-dec24", full.names = TRUE))
+								
 
 
 names(cell_files) <- cell_files %>% 
@@ -24,7 +26,7 @@ all_cells <- map_df(cell_files, read_csv, col_names = FALSE, .id = "file_name")
 
 #### Step 3: pull out just the data we want, do some renaming etc.
 
-scenedesmus_dec22 <- all_cells %>% 
+scenedesmus_dec <- all_cells %>% 
 	rename(obs_type = X1,
 				 value = X2) %>% 
 	filter(obs_type %in% c("List File", "Start Time", "Particles / ml", "Volume (ABD)")) %>%
@@ -36,4 +38,4 @@ scenedesmus_dec22 <- all_cells %>%
 	select(-other)
 
 #### Step 4: write out the summary data to file
-write_csv(scenedesmus_dec22, "data-processed/scenedesmus_dec22.csv")
+write_csv(scenedesmus_dec, "data-processed/scenedesmus_dec.csv")
