@@ -16,7 +16,6 @@ library(stringr)
 cells <- read_csv("data-processed/scenedesmus_dec.csv")
 
 
-??lubridate
 # format dates ------------------------------------------------------------
 
 cells2 <- cells %>% 
