@@ -31,6 +31,7 @@ cells2 %>%
 ggplot(aes(x = date, y = cell_density, group = replicate, color = temperature)) + geom_point(size = 4) +
 	geom_line()
 
+ggsave("figures/dec_growth.png")
 
 	
 	
